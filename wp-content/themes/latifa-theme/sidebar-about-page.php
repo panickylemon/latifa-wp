@@ -1,9 +1,9 @@
 <aside>
 
-	<form action="#" class="form-search clearfix">
+	<form action="blog/" class="form-search clearfix">
 
 		<label>
-			<input type="text" placeholder="Поиск...">
+			<input name="s" type="text" placeholder="Поиск...">
 		</label>
 
 		<button type="submit"></button>

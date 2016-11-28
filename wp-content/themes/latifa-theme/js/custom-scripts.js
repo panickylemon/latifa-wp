@@ -16,7 +16,12 @@ $(document).ready(function () {
         $(this).siblings('ul').slideToggle(200);
 
     });
-    
+    $('.form-search').submit(function() {
+        if ($('input[name=s]').val() == '') {
+            return false;
+        }
+    });
+
 
 });
 

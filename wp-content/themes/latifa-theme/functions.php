@@ -36,4 +36,12 @@ wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/js/custom-scri
 }
 add_action('wp_enqueue_scripts', 'custom_js');
 
+
+
+
+function exclude_cat($query) {
+if ($query->is_home)
+{$query->set('cat','-3');} // id категории
+return $query; }
+add_filter('pre_get_posts','exclude_cat');
 ?>
