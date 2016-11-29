@@ -45,3 +45,4 @@ if ($query->is_home)
 return $query; }
 add_filter('pre_get_posts','exclude_cat');
 ?>
+
